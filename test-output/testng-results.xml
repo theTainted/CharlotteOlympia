@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test-Suite" duration-ms="41737" started-at="2015-01-21T04:58:23Z" finished-at="2015-01-21T04:59:05Z">
+    <groups>
+    </groups>
+    <test name="CO" duration-ms="41737" started-at="2015-01-21T04:58:23Z" finished-at="2015-01-21T04:59:05Z">
+      <class name="com.CO.testCases">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.CO.testCases@1ed0884]" name="setUp" is-config="true" duration-ms="16383" started-at="2015-01-21T10:28:23Z" finished-at="2015-01-21T10:28:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSearchWithText()[pri:0, instance:com.CO.testCases@1ed0884]" name="testSearchWithText" duration-ms="25323" started-at="2015-01-21T10:28:39Z" finished-at="2015-01-21T10:29:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithText -->
+      </class> <!-- com.CO.testCases -->
+    </test> <!-- CO -->
+  </suite> <!-- Test-Suite -->
+</testng-results>

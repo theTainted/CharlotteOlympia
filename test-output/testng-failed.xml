@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test-Suite]">
+  <test name="CO(failed)">
+    <classes>
+      <class name="com.CO.testCases">
+        <methods>
+          <include name="setUp"/>
+          <include name="testSearchWithText"/>
+        </methods>
+      </class> <!-- com.CO.testCases -->
+    </classes>
+  </test> <!-- CO(failed) -->
+</suite> <!-- Failed suite [Test-Suite] -->

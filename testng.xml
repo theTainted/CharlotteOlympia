@@ -1,0 +1,9 @@
+<suite name="Test-Suite">
+    <test name = "CO">
+        <classes>
+        <class name ="com.CO.testCases" />
+        
+            </classes>
+            </test>
+            </suite>
+            
