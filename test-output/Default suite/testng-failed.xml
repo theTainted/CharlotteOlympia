@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.CO.clickOnRegister">
+      <class name="com.example.Logging.LoggingClass">
         <methods>
-          <include name="setUp"/>
-          <include name="testClickOnRegister"/>
+          <include name="dividedByZero"/>
+          <include name="methodSkip"/>
         </methods>
-      </class> <!-- com.CO.clickOnRegister -->
+      </class> <!-- com.example.Logging.LoggingClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -31,7 +31,7 @@ public void testSearchWithText() throws Exception{
 }
   @BeforeMethod
   public void setUp() {
-	// WebDriver driver = new FirefoxDriver();
+	//WebDriver driver = new FirefoxDriver();
 	/* System.setProperty("webdriver.chrome.driver","C://ChromeDriver.exe");
 	WebDriver driver = new ChromeDriver();*/ 
 	 driver.get("http://charlotteolympia.com");

@@ -1,21 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="1" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test-Suite" duration-ms="41737" started-at="2015-01-21T04:58:23Z" finished-at="2015-01-21T04:59:05Z">
+  <suite name="Default suite" duration-ms="859" started-at="2015-02-24T04:51:42Z" finished-at="2015-02-24T04:51:43Z">
     <groups>
     </groups>
-    <test name="CO" duration-ms="41737" started-at="2015-01-21T04:58:23Z" finished-at="2015-01-21T04:59:05Z">
-      <class name="com.CO.testCases">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.CO.testCases@1ed0884]" name="setUp" is-config="true" duration-ms="16383" started-at="2015-01-21T10:28:23Z" finished-at="2015-01-21T10:28:39Z">
+    <test name="Default test" duration-ms="859" started-at="2015-02-24T04:51:42Z" finished-at="2015-02-24T04:51:43Z">
+      <class name="com.example.Logging.LoggingClass">
+        <test-method status="PASS" signature="methodAddingNumbers()[pri:0, instance:com.example.Logging.LoggingClass@1666ada]" name="methodAddingNumbers" duration-ms="376" started-at="2015-02-24T10:21:42Z" finished-at="2015-02-24T10:21:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSearchWithText()[pri:0, instance:com.CO.testCases@1ed0884]" name="testSearchWithText" duration-ms="25323" started-at="2015-01-21T10:28:39Z" finished-at="2015-01-21T10:29:05Z">
+        </test-method> <!-- methodAddingNumbers -->
+        <test-method status="FAIL" signature="dividedByZero()[pri:0, instance:com.example.Logging.LoggingClass@1666ada]" name="dividedByZero" duration-ms="0" started-at="2015-02-24T10:21:43Z" finished-at="2015-02-24T10:21:43Z">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+	at com.example.Logging.LoggingClass.dividedByZero(LoggingClass.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchWithText -->
-      </class> <!-- com.CO.testCases -->
-    </test> <!-- CO -->
-  </suite> <!-- Test-Suite -->
+        </test-method> <!-- dividedByZero -->
+        <test-method status="SKIP" signature="methodSkip()[pri:0, instance:com.example.Logging.LoggingClass@1666ada]" name="methodSkip" duration-ms="94" started-at="2015-02-24T10:21:43Z" depends-on-methods="com.example.Logging.LoggingClass.dividedByZero" finished-at="2015-02-24T10:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSkip -->
+      </class> <!-- com.example.Logging.LoggingClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
