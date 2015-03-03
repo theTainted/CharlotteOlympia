@@ -6,7 +6,7 @@ import org.testng.Assert;
 import com.CO.ReadFromExcel;
 
 public class Register {
-	public WebDriver driver;
+	//public WebDriver driver;
 	String sHeaderRegisterXpath= "//*[@id='header']//header/ul[@class='menu-utility']//a[@class='user-register']";
 	String sFirstNameTextBox ="dwfrm_profile_customer_firstname";
 	String sLastNameTextBox ="dwfrm_profile_customer_lastname";

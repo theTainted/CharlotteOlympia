@@ -2,7 +2,8 @@
     <test name = "CO">
         <classes>
         <class name ="com.CO.testCases" />
-        
+        <class name ="com.CO.TestCase1"/>
+        <class name="com.CO.TestCase2"/>
             </classes>
             </test>
             </suite>

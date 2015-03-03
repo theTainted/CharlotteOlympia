@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Test-Suite]">
+  <test name="CO(failed)">
     <classes>
-      <class name="com.example.Logging.LoggingClass">
+      <class name="com.CO.testCases">
         <methods>
-          <include name="dividedByZero"/>
-          <include name="methodSkip"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.example.Logging.LoggingClass -->
+      </class> <!-- com.CO.testCases -->
+      <class name="com.CO.TestCase2">
+        <methods>
+          <include name="testSearchWithText"/>
+        </methods>
+      </class> <!-- com.CO.TestCase2 -->
+      <class name="com.CO.TestCase1">
+        <methods>
+          <include name="setUp"/>
+          <include name="testClickOnRegister"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.CO.TestCase1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- CO(failed) -->
+</suite> <!-- Failed suite [Test-Suite] -->

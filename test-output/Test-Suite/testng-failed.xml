@@ -6,9 +6,20 @@
       <class name="com.CO.testCases">
         <methods>
           <include name="setUp"/>
-          <include name="testSearchWithText"/>
         </methods>
       </class> <!-- com.CO.testCases -->
+      <class name="com.CO.TestCase2">
+        <methods>
+          <include name="testSearchWithText"/>
+        </methods>
+      </class> <!-- com.CO.TestCase2 -->
+      <class name="com.CO.TestCase1">
+        <methods>
+          <include name="setUp"/>
+          <include name="testClickOnRegister"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.CO.TestCase1 -->
     </classes>
   </test> <!-- CO(failed) -->
 </suite> <!-- Failed suite [Test-Suite] -->

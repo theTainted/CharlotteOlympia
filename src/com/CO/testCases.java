@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -11,24 +12,30 @@ public class testCases {
 	
 //	WebDriver driver = new ChromeDriver();
 	
-	 WebDriver driver = new FirefoxDriver();
-@Test(enabled=false)
+  WebDriver driver = new FirefoxDriver();
+/*@Test(enabled=false)
   public void testClickOnRegister() throws Exception {
-	/*Search search = new Search();
-	search.searchWithText(driver);*/
+	//Search search = new Search();
+	search.searchWithText(driver);
 	 Register register = new Register();
 	  register.clickOnRegister(driver);
 	  register.enterFirstName(driver);
 	  register.enterLastName(driver);
-	/*  register.clickOnApplyButton(driver);
-	  register.verifyEmptyFirstNameErrorMessage(driver);
-	  register.verifyEmptyLastNameErrorMessage(driver);*/
-  }
-@Test
+	//  register.clickOnApplyButton(driver);
+	 // register.verifyEmptyFirstNameErrorMessage(driver);
+	 // register.verifyEmptyLastNameErrorMessage(driver);
+  }*/
+/*@Test(enabled=false)
 public void testSearchWithText() throws Exception{
 	Search searchWithText=new Search();
 	searchWithText.searchWithText(driver);
+}*/
+@Test
+public void test() {
+	HomePage Close = new HomePage();
+	Close.clickOnCloseButton(driver);
 }
+
   @BeforeMethod
   public void setUp() {
 	//WebDriver driver = new FirefoxDriver();
@@ -39,5 +46,8 @@ public void testSearchWithText() throws Exception{
 	 driver.manage().window().maximize();
 	  
   }
-
+@AfterTest
+public void TearDown(){
+	driver.quit();
+}
 }
